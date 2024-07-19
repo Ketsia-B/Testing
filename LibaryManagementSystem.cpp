@@ -23,11 +23,11 @@ void addBook() {
     cin >> book.id;
     cin.ignore();
     cout << "Enter book title: ";
-    //getline(cin, book.title);
-    cin>>book.title;
+    getline(cin, book.title);
+    //cin>>book.title;
     cout << "Enter book author: ";
-//    getline(cin, book.author);
-cin>>book.author;
+   getline(cin, book.author);
+  //cin>>book.author;
     book.isBorrowed = false;
 
     ofstream outFile("books.dat", ios::binary | ios::app);
